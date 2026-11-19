@@ -1,0 +1,11 @@
+# RUNTIME dependencies of the deployed API only (no training, notebooks, plotting or Streamlit).
+# Versions below were tested together with Python 3.12 (see TESTING.md). The saved model was
+# created with scikit-learn 1.5.2, so keep that pin.
+fastapi==0.115.6
+uvicorn==0.34.0
+pydantic==2.10.4
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.5.2
+scipy==1.17.1
+joblib==1.4.2

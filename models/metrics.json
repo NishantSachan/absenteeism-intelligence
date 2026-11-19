@@ -1,0 +1,382 @@
+{
+  "shortlist_oof": {
+    "Reason-only baseline (LR)": {
+      "pr_auc": 0.7321549511416804,
+      "roc_auc": 0.8556903744403745,
+      "brier": 0.1312660053452473,
+      "log_loss": 0.4237195853909633,
+      "ece": 0.07848928949730041,
+      "pr_auc_std": 0.02331146540497633,
+      "roc_auc_std": 0.009652868075978935,
+      "brier_std": 0.004144639381457883,
+      "log_loss_std": 0.01007125913290789,
+      "ece_std": 0.013461081007275312
+    },
+    "Logistic Regression": {
+      "pr_auc": 0.7291353850433716,
+      "roc_auc": 0.8542010073260073,
+      "brier": 0.13718275843139743,
+      "log_loss": 0.4390961428085706,
+      "ece": 0.07452814468782838,
+      "pr_auc_std": 0.01998537341320464,
+      "roc_auc_std": 0.007573698281595701,
+      "brier_std": 0.003730389714095832,
+      "log_loss_std": 0.008336898655134024,
+      "ece_std": 0.008998242963411347
+    },
+    "Random Forest": {
+      "pr_auc": 0.7453308009847817,
+      "roc_auc": 0.862541971916972,
+      "brier": 0.13509929620970582,
+      "log_loss": 0.4342623230663632,
+      "ece": 0.07665625548735867,
+      "pr_auc_std": 0.02733403676421713,
+      "roc_auc_std": 0.009151537562036507,
+      "brier_std": 0.00375205539213702,
+      "log_loss_std": 0.009164279326676088,
+      "ece_std": 0.00590679709048262
+    },
+    "SVM (RBF kernel)": {
+      "pr_auc": 0.7557469964641286,
+      "roc_auc": 0.8599409849409849,
+      "brier": 0.13231664489248998,
+      "log_loss": 0.42735929961765456,
+      "ece": 0.04268688659111901,
+      "pr_auc_std": 0.028506518955977504,
+      "roc_auc_std": 0.0077619851146615475,
+      "brier_std": 0.0038763331360313438,
+      "log_loss_std": 0.010940383191533083,
+      "ece_std": 0.010633938042676795
+    }
+  },
+  "selection": {
+    "eligible": [
+      "Random Forest",
+      "SVM (RBF kernel)"
+    ],
+    "chosen": "Random Forest"
+  },
+  "threshold": {
+    "chosen": 0.34,
+    "oof_recall": 0.9133928571428571,
+    "oof_precision": 0.7245284034456915,
+    "sensitivity": {
+      "1.0": 0.4,
+      "2.0": 0.34,
+      "3.0": 0.34
+    }
+  },
+  "test": {
+    "chosen_model": {
+      "pr_auc": 0.7158613052757629,
+      "roc_auc": 0.8337588652482271,
+      "recall": 0.851063829787234,
+      "precision": 0.7142857142857143,
+      "f1": 0.7766990291262136,
+      "balanced_acc": 0.8188652482269503,
+      "accuracy": 0.8114754098360656,
+      "brier": 0.14496647075035768,
+      "ece": 0.09209394148219274,
+      "tn": 59,
+      "fp": 16,
+      "fn": 7,
+      "tp": 40
+    },
+    "bootstrap_95ci": {
+      "pr_auc": [
+        0.5215481254430159,
+        0.8731101377437906
+      ],
+      "recall": [
+        0.6995,
+        0.9506172839506173
+      ],
+      "precision": [
+        0.5,
+        0.9130622188905546
+      ],
+      "f1": [
+        0.5862068965517241,
+        0.9147286821705426
+      ],
+      "accuracy": [
+        0.6451612903225806,
+        0.9230769230769231
+      ]
+    },
+    "comparators": {
+      "Reason-only baseline (LR)": {
+        "pr_auc": 0.7027134486834058,
+        "roc_auc": 0.8320567375886524,
+        "recall": 0.851063829787234,
+        "precision": 0.7272727272727273,
+        "f1": 0.7843137254901961,
+        "balanced_acc": 0.8255319148936171,
+        "accuracy": 0.819672131147541,
+        "brier": 0.1406592047931226,
+        "ece": 0.07552256574944315,
+        "tn": 60,
+        "fp": 15,
+        "fn": 7,
+        "tp": 40
+      },
+      "Majority class (always 'short')": {
+        "pr_auc": 0.38524590163934425,
+        "recall": 0.0,
+        "precision": 0.0,
+        "f1": 0.0,
+        "accuracy": 0.6147540983606558
+      }
+    },
+    "test_rows": 122,
+    "test_employees": 6
+  },
+  "permutation_importance": {
+    "Month of absence": 0.010396032920713037,
+    "Day of the week": 0.012813581166118698,
+    "Reason for absence": 0.3140026154323975
+  },
+  "evaluation_v2": {
+    "version": 2,
+    "threshold_used": 0.34,
+    "seeds": 10,
+    "rows": 697,
+    "employees": 33,
+    "prevalence": 0.38880918220946914,
+    "pooled_grouped_cv": {
+      "Reason-only baseline (LR)": {
+        "pr_auc": 0.7268093099243564,
+        "pr_auc_sd_over_seeds": 0.016676382484320157,
+        "roc_auc": 0.8546606205498675,
+        "brier": 0.13317861375771564,
+        "recall": 0.9040590405904059,
+        "precision": 0.7313336210617176,
+        "f1": 0.808567816230358,
+        "pr_auc_ci95_employee_bootstrap": [
+          0.6312771040937056,
+          0.810368118256287
+        ]
+      },
+      "Logistic Regression": {
+        "pr_auc": 0.7285288371613035,
+        "pr_auc_sd_over_seeds": 0.01628265921445332,
+        "roc_auc": 0.8526648822826257,
+        "brier": 0.13740330295489778,
+        "recall": 0.899630996309963,
+        "precision": 0.7260481589051375,
+        "f1": 0.8035619588895425,
+        "pr_auc_ci95_employee_bootstrap": [
+          0.6273449776918387,
+          0.820601173345042
+        ]
+      },
+      "Random Forest": {
+        "pr_auc": 0.7437972673443859,
+        "pr_auc_sd_over_seeds": 0.02128727716669446,
+        "roc_auc": 0.8580474854044315,
+        "brier": 0.1366776706685232,
+        "recall": 0.9044280442804429,
+        "precision": 0.7192206743701017,
+        "f1": 0.8012456899447532,
+        "pr_auc_ci95_employee_bootstrap": [
+          0.6448666604926157,
+          0.8325777207463659
+        ]
+      },
+      "SVM (RBF kernel)": {
+        "pr_auc": 0.7534512500138442,
+        "pr_auc_sd_over_seeds": 0.019797751929969555,
+        "roc_auc": 0.8567278207993347,
+        "brier": 0.13375975967276577,
+        "recall": 0.8723247232472324,
+        "precision": 0.7285472954513177,
+        "f1": 0.793696353928057,
+        "pr_auc_ci95_employee_bootstrap": [
+          0.6656737596850832,
+          0.850072817357785
+        ]
+      },
+      "Smoothed reason lookup": {
+        "pr_auc": 0.7315094432270509,
+        "pr_auc_sd_over_seeds": 0.017094695088416247,
+        "roc_auc": 0.8571804133534293,
+        "brier": 0.13703163294882176,
+        "recall": 0.8933579335793358,
+        "precision": 0.7320813876972145,
+        "f1": 0.8046631169511473,
+        "pr_auc_ci95_employee_bootstrap": [
+          0.6294277846702611,
+          0.8182986602232141
+        ]
+      },
+      "Prevalence baseline (no skill)": {
+        "pr_auc": 0.38880918220946914,
+        "pr_auc_sd_over_seeds": 0.0,
+        "roc_auc": 0.5,
+        "brier": 0.23763660203907294,
+        "recall": 1.0,
+        "precision": 0.38880918220946914,
+        "f1": 0.5599173553719009,
+        "pr_auc_ci95_employee_bootstrap": [
+          0.29927650247380677,
+          0.514379907818368
+        ]
+      }
+    },
+    "paired_pr_auc_differences": {
+      "Random Forest minus Reason-only baseline (LR)": {
+        "median": 0.021862670557441788,
+        "ci95": [
+          -0.006023624930956967,
+          0.050001565853511815
+        ]
+      },
+      "SVM (RBF kernel) minus Reason-only baseline (LR)": {
+        "median": 0.03995750032910961,
+        "ci95": [
+          -0.0023979581997315255,
+          0.08805632271145943
+        ]
+      },
+      "Logistic Regression minus Reason-only baseline (LR)": {
+        "median": 0.00588349006262151,
+        "ci95": [
+          -0.022820312283765343,
+          0.03218574646887485
+        ]
+      },
+      "Random Forest minus Smoothed reason lookup": {
+        "median": 0.019263872127036452,
+        "ci95": [
+          -0.011733031581528629,
+          0.04742482181744481
+        ]
+      }
+    },
+    "calibration_random_forest": [
+      {
+        "mean_predicted": 0.07173455143308556,
+        "observed_rate": 0.11363636363636363,
+        "n": 88
+      },
+      {
+        "mean_predicted": 0.11108403847252754,
+        "observed_rate": 0.0449438202247191,
+        "n": 89
+      },
+      {
+        "mean_predicted": 0.14565955554376517,
+        "observed_rate": 0.058823529411764705,
+        "n": 85
+      },
+      {
+        "mean_predicted": 0.2080679648185514,
+        "observed_rate": 0.04597701149425287,
+        "n": 87
+      },
+      {
+        "mean_predicted": 0.5058335559429554,
+        "observed_rate": 0.5172413793103449,
+        "n": 87
+      },
+      {
+        "mean_predicted": 0.649550511070707,
+        "observed_rate": 0.8045977011494253,
+        "n": 87
+      },
+      {
+        "mean_predicted": 0.7216152116863699,
+        "observed_rate": 0.75,
+        "n": 88
+      },
+      {
+        "mean_predicted": 0.7987902272730941,
+        "observed_rate": 0.7790697674418605,
+        "n": 86
+      }
+    ],
+    "temporal_check": {
+      "train_months": 25,
+      "test_months": 12,
+      "train_rows": 448,
+      "test_rows": 249,
+      "train_prevalence": 0.421875,
+      "test_prevalence": 0.3293172690763052,
+      "test_employees": 26,
+      "test_employees_also_in_train": 22,
+      "models": {
+        "Reason-only baseline (LR)": {
+          "pr_auc": 0.6700847325210084,
+          "roc_auc": 0.8233167810720023,
+          "recall": 0.8780487804878049,
+          "precision": 0.6260869565217392,
+          "f1": 0.7309644670050761
+        },
+        "Logistic Regression": {
+          "pr_auc": 0.6666337912653816,
+          "roc_auc": 0.8244486636483133,
+          "recall": 0.8780487804878049,
+          "precision": 0.6,
+          "f1": 0.7128712871287128
+        },
+        "Random Forest": {
+          "pr_auc": 0.6869362822919919,
+          "roc_auc": 0.8391996494815248,
+          "recall": 0.8902439024390244,
+          "precision": 0.584,
+          "f1": 0.7053140096618358
+        },
+        "SVM (RBF kernel)": {
+          "pr_auc": 0.668802418949231,
+          "roc_auc": 0.8404410690813494,
+          "recall": 0.8780487804878049,
+          "precision": 0.5901639344262295,
+          "f1": 0.7058823529411765
+        }
+      },
+      "note": "Descriptive only: one split, and most test-period employees were also seen in training, so this does not show performance for new employees."
+    },
+    "original_test_split_like_for_like": {
+      "Random Forest": {
+        "pr_auc": 0.7158613052757629,
+        "at_0.34": {
+          "recall": 0.851063829787234,
+          "precision": 0.7142857142857143,
+          "f1": 0.7766990291262136
+        },
+        "at_0.5": {
+          "recall": 0.8297872340425532,
+          "precision": 0.7222222222222222,
+          "f1": 0.7722772277227723
+        }
+      },
+      "Reason-only baseline (LR)": {
+        "pr_auc": 0.7027134486834058,
+        "at_0.34": {
+          "recall": 0.851063829787234,
+          "precision": 0.7272727272727273,
+          "f1": 0.7843137254901961
+        },
+        "at_0.5": {
+          "recall": 0.851063829787234,
+          "precision": 0.7272727272727273,
+          "f1": 0.7843137254901961
+        }
+      },
+      "note": "6 test employees, 122 rows; both models scored at the same thresholds (0.34 and 0.5)."
+    },
+    "conclusion": "The reason code carries almost all of the usable signal. Random Forest, SVM and the one-column baselines are statistically hard to separate: the employee-level bootstrap intervals for their PR-AUC differences include zero or are small. The deployed Random Forest is kept because nothing here justifies replacing it, not because it is clearly better.",
+    "timeline_consistency": {
+      "runs_total": 38,
+      "runs_with_month": 37,
+      "consecutive_month_steps": 36,
+      "steps_checked": 36,
+      "one_month_per_run": true,
+      "distinct_workload_values": 38,
+      "rows_without_period": 3,
+      "ok": true,
+      "assumed_start": "2007-07",
+      "note": "Reconstructed from row order and the monthly workload figure; the file has no date column. The start month is taken from the public dataset documentation."
+    }
+  }
+}

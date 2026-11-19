@@ -1,0 +1,8 @@
+model,PR-AUC grouped (new employees),PR-AUC random (seen employees),F1 grouped,F1 random,PR-AUC inflation
+Baseline: reason code only,0.768,0.788,0.793,0.8,0.019
+Logistic Regression,0.732,0.811,0.706,0.78,0.078
+Decision Tree,0.638,0.718,0.73,0.816,0.081
+Random Forest,0.738,0.853,0.722,0.767,0.115
+SVM (RBF kernel),0.714,0.839,0.623,0.761,0.125
+K-Nearest Neighbors,0.544,0.724,0.404,0.616,0.18
+Gradient Boosting,0.729,0.824,0.734,0.8,0.095

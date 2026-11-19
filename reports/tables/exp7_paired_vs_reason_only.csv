@@ -1,0 +1,6 @@
+,PR-AUC difference vs reason-only,std of difference,share of folds where model wins,n_folds
+Logistic Regression (reason+month+day),-0.005,0.031,0.32,25.0
+Random Forest (reason+month+day),0.018,0.03,0.76,25.0
+SVM (reason+month+day),0.036,0.053,0.8,25.0
+Gradient Boosting (reason+month+day),-0.005,0.021,0.36,25.0
+Random Forest (13 features),-0.027,0.061,0.4,25.0

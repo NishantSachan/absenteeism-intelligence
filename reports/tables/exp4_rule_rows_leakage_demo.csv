@@ -1,0 +1,5 @@
+dataset,model,rows,accuracy,PR-AUC,F1
+rule rows EXCLUDED (our dataset),Logistic Regression,575,0.755,0.732,0.706
+rule rows EXCLUDED (our dataset),Random Forest,575,0.741,0.737,0.722
+rule rows INCLUDED,Logistic Regression,608,0.775,0.711,0.709
+rule rows INCLUDED,Random Forest,608,0.779,0.736,0.72

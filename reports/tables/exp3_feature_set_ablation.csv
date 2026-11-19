@@ -1,0 +1,15 @@
+feature set,model,PR-AUC grouped,F1 grouped,recall grouped,PR-AUC random
+Reason only,Logistic Regression,0.768,0.793,0.869,0.788
+Reason only,Random Forest,0.764,0.788,0.853,0.782
+Reason + month/day,Logistic Regression,0.764,0.775,0.824,0.777
+Reason + month/day,Random Forest,0.781,0.788,0.845,0.805
+Reason + personal,Logistic Regression,0.746,0.728,0.769,0.828
+Reason + personal,Random Forest,0.726,0.754,0.874,0.853
+Full (13 Phase-2 features),Logistic Regression,0.732,0.706,0.739,0.811
+Full (13 Phase-2 features),Random Forest,0.737,0.722,0.837,0.851
+Full + period features,Logistic Regression,0.736,0.705,0.736,0.817
+Full + period features,Random Forest,0.734,0.706,0.817,0.847
+No reason (month/day + personal),Logistic Regression,0.487,0.37,0.427,0.597
+No reason (month/day + personal),Random Forest,0.5,0.434,0.572,0.705
+Personal attributes only,Logistic Regression,0.459,0.324,0.372,0.586
+Personal attributes only,Random Forest,0.454,0.423,0.578,0.664

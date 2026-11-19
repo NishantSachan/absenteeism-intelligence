@@ -1,0 +1,4 @@
+,pr_auc,roc_auc,recall,precision,f1,balanced_acc,accuracy,brier,ece,tn,fp,fn,tp
+Random Forest,0.716,0.834,0.851,0.714,0.777,0.819,0.811,0.145,0.092,59.0,16.0,7.0,40.0
+Reason-only baseline (LR),0.703,0.832,0.851,0.727,0.784,0.826,0.82,0.141,0.076,60.0,15.0,7.0,40.0
+Majority class (always 'short'),0.385,,0.0,0.0,0.0,,0.615,,,,,,

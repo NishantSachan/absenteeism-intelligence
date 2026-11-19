@@ -1,0 +1,24 @@
+# systemd unit template. setup_ec2.sh fills in the __PLACEHOLDERS__ and installs it as
+# /etc/systemd/system/absenteeism-api.service
+[Unit]
+Description=Absenteeism Intelligence API (FastAPI + uvicorn)
+After=network.target
+
+[Service]
+Type=simple
+User=__USER__
+WorkingDirectory=__APP_DIR__
+# Optional settings (CORS_ORIGINS, LOG_LEVEL ...). The leading "-" means the file may be absent.
+EnvironmentFile=-/etc/absenteeism/api.env
+# Listens on localhost only; nginx (port 80) is the only thing that talks to it.
+ExecStart=__APP_DIR__/.venv/bin/uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --workers 1 --proxy-headers --forwarded-allow-ips=127.0.0.1
+# Restart automatically if the process ever crashes (waits 5 s between attempts)
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

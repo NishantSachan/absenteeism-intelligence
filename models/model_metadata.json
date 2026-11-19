@@ -1,0 +1,114 @@
+{
+  "model_name": "Random Forest",
+  "model_version": "1.0.0",
+  "created_utc": "2026-10-15T20:00:08+00:00",
+  "task": "Predict whether a reported absence will last 8 hours or more",
+  "target": {
+    "column": "long_absence",
+    "definition": "Absenteeism time in hours >= 8",
+    "class_labels": {
+      "0": "short (<8 hours)",
+      "1": "long (8+ hours)"
+    }
+  },
+  "feature_columns": [
+    "Reason for absence",
+    "Month of absence",
+    "Day of the week"
+  ],
+  "input_schema": {
+    "Reason for absence": {
+      "type": "integer code",
+      "allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "note": "Code 0 is outside the model's scope (always 0 hours in the data)."
+    },
+    "Month of absence": {
+      "type": "integer code",
+      "allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "Day of the week": {
+      "type": "integer code",
+      "allowed": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  "decision_threshold": 0.34,
+  "threshold_rule": "minimise FP + 2.0 x FN on out-of-fold predictions",
+  "assumed_fn_to_fp_cost_ratio": 2.0,
+  "threshold_sensitivity": {
+    "1.0": 0.4,
+    "2.0": 0.34,
+    "3.0": 0.34
+  },
+  "training": {
+    "rows_used_for_deployed_model": 697,
+    "employees": 33,
+    "note": "Deployed model is refit on train+test employees; reported test metrics come from the train-only version."
+  },
+  "library_versions": {
+    "python": "3.10.20",
+    "scikit-learn": "1.5.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3"
+  },
+  "probability_note": "Probabilities are the model's raw estimates; see calibration metrics in metrics.json.",
+  "limitations": [
+    "Only absence events are in the data; the model cannot predict whether an absence occurs.",
+    "Built from 33 employees at one company; results are noisy and may not transfer to other workplaces or periods.",
+    "The model is statistically hard to distinguish from a reason-code-only baseline.",
+    "Reason-code labels come from public dataset documentation, not from the data file.",
+    "Associations are not causes. Not for hiring, firing or disciplinary decisions."
+  ],
+  "metadata_revision": {
+    "revision": 2,
+    "note": "Model artifact unchanged (v1.0.0, verified reproducible by retraining). Evaluation extended: pooled grouped CV, temporal check; limitations updated.",
+    "reason_code_labels": "From public UCI documentation (see src/reason_codes.py).",
+    "artifact_sha256": "85fe744df4fe0ea047f9e3ed4930f2ff72b584b206ac483b941057a6d7222c21"
+  }
+}

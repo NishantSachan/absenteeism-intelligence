@@ -1,0 +1,247 @@
+{
+ "reasons": {
+  "1": {
+   "model_mean": 0.7236106250786997,
+   "model_min": 0.586403014933702,
+   "model_max": 0.8927766982457579,
+   "reason_only": 0.7924381061501202
+  },
+  "2": {
+   "model_mean": 0.6366891775527004,
+   "model_min": 0.4217933874059122,
+   "model_max": 0.8233497586389978,
+   "reason_only": 0.6732654597985696
+  },
+  "3": {
+   "model_mean": 0.6366891775527004,
+   "model_min": 0.4217933874059122,
+   "model_max": 0.8233497586389978,
+   "reason_only": 0.6732654597985696
+  },
+  "4": {
+   "model_mean": 0.6366891775527004,
+   "model_min": 0.4217933874059122,
+   "model_max": 0.8233497586389978,
+   "reason_only": 0.6732654597985696
+  },
+  "5": {
+   "model_mean": 0.6366891775527004,
+   "model_min": 0.4217933874059122,
+   "model_max": 0.8233497586389978,
+   "reason_only": 0.6732654597985696
+  },
+  "6": {
+   "model_mean": 0.6366891775527004,
+   "model_min": 0.4217933874059122,
+   "model_max": 0.8233497586389978,
+   "reason_only": 0.6732654597985696
+  },
+  "7": {
+   "model_mean": 0.5307059202095341,
+   "model_min": 0.4018186048558088,
+   "model_max": 0.7323115369756952,
+   "reason_only": 0.5282784918750606
+  },
+  "8": {
+   "model_mean": 0.6366891775527004,
+   "model_min": 0.4217933874059122,
+   "model_max": 0.8233497586389978,
+   "reason_only": 0.6732654597985696
+  },
+  "9": {
+   "model_mean": 0.6366891775527004,
+   "model_min": 0.4217933874059122,
+   "model_max": 0.8233497586389978,
+   "reason_only": 0.6732654597985696
+  },
+  "10": {
+   "model_mean": 0.7496225554748057,
+   "model_min": 0.6619035959317171,
+   "model_max": 0.8515011778680239,
+   "reason_only": 0.7886444634336262
+  },
+  "11": {
+   "model_mean": 0.5168013865843718,
+   "model_min": 0.40364780592794935,
+   "model_max": 0.6982018473188384,
+   "reason_only": 0.534629953226182
+  },
+  "12": {
+   "model_mean": 0.6366891775527004,
+   "model_min": 0.4217933874059122,
+   "model_max": 0.8233497586389978,
+   "reason_only": 0.6732654597985696
+  },
+  "13": {
+   "model_mean": 0.6632466769178539,
+   "model_min": 0.45860479075553495,
+   "model_max": 0.8280999525815301,
+   "reason_only": 0.6781264909598839
+  },
+  "14": {
+   "model_mean": 0.4846917868103129,
+   "model_min": 0.3437691991681429,
+   "model_max": 0.698423046215507,
+   "reason_only": 0.4799145214593644
+  },
+  "15": {
+   "model_mean": 0.6366891775527004,
+   "model_min": 0.4217933874059122,
+   "model_max": 0.8233497586389978,
+   "reason_only": 0.6732654597985696
+  },
+  "16": {
+   "model_mean": 0.6366891775527004,
+   "model_min": 0.4217933874059122,
+   "model_max": 0.8233497586389978,
+   "reason_only": 0.6732654597985696
+  },
+  "17": {
+   "model_mean": 0.6366891775527004,
+   "model_min": 0.4217933874059122,
+   "model_max": 0.8233497586389978,
+   "reason_only": 0.6732654597985696
+  },
+  "18": {
+   "model_mean": 0.7090389938983331,
+   "model_min": 0.5885671816841005,
+   "model_max": 0.856047582722231,
+   "reason_only": 0.7571629005311361
+  },
+  "19": {
+   "model_mean": 0.7703061133527169,
+   "model_min": 0.6752899314493267,
+   "model_max": 0.8647294022111308,
+   "reason_only": 0.7921916124472634
+  },
+  "21": {
+   "model_mean": 0.6366891775527004,
+   "model_min": 0.4217933874059122,
+   "model_max": 0.8233497586389978,
+   "reason_only": 0.6732654597985696
+  },
+  "22": {
+   "model_mean": 0.8276969514457476,
+   "model_min": 0.7031771809238196,
+   "model_max": 0.9111196817304025,
+   "reason_only": 0.8495943460479265
+  },
+  "23": {
+   "model_mean": 0.1007118840702523,
+   "model_min": 0.03656434501191395,
+   "model_max": 0.2818873984772051,
+   "reason_only": 0.10213159303712631
+  },
+  "24": {
+   "model_mean": 0.6366891775527004,
+   "model_min": 0.4217933874059122,
+   "model_max": 0.8233497586389978,
+   "reason_only": 0.6732654597985696
+  },
+  "25": {
+   "model_mean": 0.23753223047360222,
+   "model_min": 0.136037139495968,
+   "model_max": 0.37752053129994906,
+   "reason_only": 0.17953829280564626
+  },
+  "26": {
+   "model_mean": 0.7229737694719911,
+   "model_min": 0.6408492392397471,
+   "model_max": 0.8094139233535145,
+   "reason_only": 0.7285145785320979
+  },
+  "27": {
+   "model_mean": 0.06148421580672437,
+   "model_min": 0.0232900610038157,
+   "model_max": 0.19099099607973738,
+   "reason_only": 0.0446969607678375
+  },
+  "28": {
+   "model_mean": 0.09262167682858975,
+   "model_min": 0.02253678440848102,
+   "model_max": 0.21887565948641202,
+   "reason_only": 0.09226493297731025
+  }
+ },
+ "month_marginal": [
+  {
+   "code": 1,
+   "weighted_probability": 0.34421613409659924
+  },
+  {
+   "code": 2,
+   "weighted_probability": 0.361876882840901
+  },
+  {
+   "code": 3,
+   "weighted_probability": 0.4252837977597559
+  },
+  {
+   "code": 4,
+   "weighted_probability": 0.395214812427002
+  },
+  {
+   "code": 5,
+   "weighted_probability": 0.35604746489443595
+  },
+  {
+   "code": 6,
+   "weighted_probability": 0.3704363837744461
+  },
+  {
+   "code": 7,
+   "weighted_probability": 0.43066249245540666
+  },
+  {
+   "code": 8,
+   "weighted_probability": 0.3750423255661758
+  },
+  {
+   "code": 9,
+   "weighted_probability": 0.3963710916932884
+  },
+  {
+   "code": 10,
+   "weighted_probability": 0.366447102269417
+  },
+  {
+   "code": 11,
+   "weighted_probability": 0.3899886040746806
+  },
+  {
+   "code": 12,
+   "weighted_probability": 0.36740012705710157
+  }
+ ],
+ "weekday_marginal": [
+  {
+   "code": 2,
+   "weighted_probability": 0.40550166111345515
+  },
+  {
+   "code": 3,
+   "weighted_probability": 0.3980822267991783
+  },
+  {
+   "code": 4,
+   "weighted_probability": 0.39687043574808245
+  },
+  {
+   "code": 5,
+   "weighted_probability": 0.34747389045121924
+  },
+  {
+   "code": 6,
+   "weighted_probability": 0.3599831271002352
+  }
+ ],
+ "month_day_spread_within_reason": {
+  "median_iqr": 0.09829864422708623,
+  "max_iqr": 0.13670618898833453,
+  "reasons_whose_flag_depends_on_month_or_weekday": [
+   25
+  ],
+  "threshold": 0.34
+ },
+ "note": "Computed from the saved model over all 1,620 supported input combinations; reason-only is a comparator fitted on the same data."
+}

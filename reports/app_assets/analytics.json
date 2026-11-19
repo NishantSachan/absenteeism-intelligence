@@ -1,0 +1,1540 @@
+{
+ "generated_utc": "2026-10-19T09:28:41+00:00",
+ "overview": {
+  "raw_rows": 740,
+  "raw_columns": 21,
+  "raw_employees": 36,
+  "missing_values": 0,
+  "exact_duplicate_rows": 34,
+  "rule_rows": 43,
+  "rule_rows_all_zero_hours": true,
+  "modelled_rows": 697,
+  "modelled_employees": 33,
+  "long_n": 271,
+  "long_share": 0.38880918220946914,
+  "long_threshold_hours": 8,
+  "months_covered": 37,
+  "duplicate_note": "Kept: with no date column, identical rows can be different events."
+ },
+ "durations": {
+  "histogram": [
+   {
+    "hours": 0,
+    "events": 1,
+    "long": false
+   },
+   {
+    "hours": 1,
+    "events": 88,
+    "long": false
+   },
+   {
+    "hours": 2,
+    "events": 157,
+    "long": false
+   },
+   {
+    "hours": 3,
+    "events": 112,
+    "long": false
+   },
+   {
+    "hours": 4,
+    "events": 60,
+    "long": false
+   },
+   {
+    "hours": 5,
+    "events": 7,
+    "long": false
+   },
+   {
+    "hours": 7,
+    "events": 1,
+    "long": false
+   },
+   {
+    "hours": 8,
+    "events": 208,
+    "long": true
+   },
+   {
+    "hours": 16,
+    "events": 19,
+    "long": true
+   },
+   {
+    "hours": 24,
+    "events": 16,
+    "long": true
+   },
+   {
+    "hours": 32,
+    "events": 6,
+    "long": true
+   },
+   {
+    "hours": 40,
+    "events": 7,
+    "long": true
+   },
+   {
+    "hours": 48,
+    "events": 1,
+    "long": true
+   },
+   {
+    "hours": 56,
+    "events": 2,
+    "long": true
+   },
+   {
+    "hours": 64,
+    "events": 3,
+    "long": true
+   },
+   {
+    "hours": 80,
+    "events": 3,
+    "long": true
+   },
+   {
+    "hours": 104,
+    "events": 1,
+    "long": true
+   },
+   {
+    "hours": 112,
+    "events": 2,
+    "long": true
+   },
+   {
+    "hours": 120,
+    "events": 3,
+    "long": true
+   }
+  ],
+  "mean": 7.351506456241033,
+  "median": 3.0,
+  "p90": 8.0,
+  "max": 120,
+  "events_between_5_and_7_hours": 8,
+  "events_exactly_8_hours": 208,
+  "long_events_that_are_whole_days": 1.0,
+  "long_share_of_events": 0.38880918220946914,
+  "long_share_of_lost_hours": 0.8009367681498829,
+  "total_lost_hours": 5124
+ },
+ "reasons": {
+  "rows": [
+   {
+    "code": 1,
+    "label": "Infectious and parasitic diseases",
+    "n": 16,
+    "long_n": 14,
+    "long_rate": 0.875,
+    "ci_low": 0.6397666856325172,
+    "ci_high": 0.9650232506629429,
+    "mean_hours": 11.375,
+    "lost_hours": 182,
+    "event_share": 0.02295552367288379,
+    "hours_share": 0.03551912568306011,
+    "low_n": false,
+    "tier": "mostly long"
+   },
+   {
+    "code": 2,
+    "label": "Neoplasms",
+    "n": 1,
+    "long_n": 1,
+    "long_rate": 1.0,
+    "ci_low": 0.20654329147389294,
+    "ci_high": 1.0,
+    "mean_hours": 24.0,
+    "lost_hours": 24,
+    "event_share": 0.0014347202295552368,
+    "hours_share": 0.00468384074941452,
+    "low_n": true,
+    "tier": "insufficient data"
+   },
+   {
+    "code": 3,
+    "label": "Diseases of the blood and immune mechanism",
+    "n": 1,
+    "long_n": 1,
+    "long_rate": 1.0,
+    "ci_low": 0.20654329147389294,
+    "ci_high": 1.0,
+    "mean_hours": 8.0,
+    "lost_hours": 8,
+    "event_share": 0.0014347202295552368,
+    "hours_share": 0.00156128024980484,
+    "low_n": true,
+    "tier": "insufficient data"
+   },
+   {
+    "code": 4,
+    "label": "Endocrine, nutritional and metabolic diseases",
+    "n": 2,
+    "long_n": 1,
+    "long_rate": 0.5,
+    "ci_low": 0.09452865480086611,
+    "ci_high": 0.905471345199134,
+    "mean_hours": 4.5,
+    "lost_hours": 9,
+    "event_share": 0.0028694404591104736,
+    "hours_share": 0.001756440281030445,
+    "low_n": true,
+    "tier": "insufficient data"
+   },
+   {
+    "code": 5,
+    "label": "Mental and behavioural disorders",
+    "n": 3,
+    "long_n": 2,
+    "long_rate": 0.6666666666666666,
+    "ci_low": 0.20765495512648788,
+    "ci_high": 0.9385096847238393,
+    "mean_hours": 6.333333333333333,
+    "lost_hours": 19,
+    "event_share": 0.00430416068866571,
+    "hours_share": 0.003708040593286495,
+    "low_n": true,
+    "tier": "insufficient data"
+   },
+   {
+    "code": 6,
+    "label": "Diseases of the nervous system",
+    "n": 8,
+    "long_n": 7,
+    "long_rate": 0.875,
+    "ci_low": 0.5291051942301385,
+    "ci_high": 0.9775830911367039,
+    "mean_hours": 21.375,
+    "lost_hours": 171,
+    "event_share": 0.011477761836441894,
+    "hours_share": 0.03337236533957846,
+    "low_n": true,
+    "tier": "insufficient data"
+   },
+   {
+    "code": 7,
+    "label": "Diseases of the eye and adnexa",
+    "n": 15,
+    "long_n": 8,
+    "long_rate": 0.5333333333333333,
+    "ci_low": 0.3011663015105079,
+    "ci_high": 0.7519077474025356,
+    "mean_hours": 10.0,
+    "lost_hours": 150,
+    "event_share": 0.021520803443328552,
+    "hours_share": 0.02927400468384075,
+    "low_n": false,
+    "tier": "mixed / uncertain"
+   },
+   {
+    "code": 8,
+    "label": "Diseases of the ear and mastoid process",
+    "n": 6,
+    "long_n": 3,
+    "long_rate": 0.5,
+    "ci_low": 0.1876128068994087,
+    "ci_high": 0.8123871931005913,
+    "mean_hours": 5.333333333333333,
+    "lost_hours": 32,
+    "event_share": 0.00860832137733142,
+    "hours_share": 0.00624512099921936,
+    "low_n": true,
+    "tier": "insufficient data"
+   },
+   {
+    "code": 9,
+    "label": "Diseases of the circulatory system",
+    "n": 4,
+    "long_n": 4,
+    "long_rate": 1.0,
+    "ci_low": 0.5100999795960008,
+    "ci_high": 1.0,
+    "mean_hours": 42.0,
+    "lost_hours": 168,
+    "event_share": 0.005738880918220947,
+    "hours_share": 0.03278688524590164,
+    "low_n": true,
+    "tier": "insufficient data"
+   },
+   {
+    "code": 10,
+    "label": "Diseases of the respiratory system",
+    "n": 25,
+    "long_n": 21,
+    "long_rate": 0.84,
+    "ci_low": 0.6534598601976184,
+    "ci_high": 0.9359665239142201,
+    "mean_hours": 11.04,
+    "lost_hours": 276,
+    "event_share": 0.035868005738880916,
+    "hours_share": 0.053864168618266976,
+    "low_n": false,
+    "tier": "mostly long"
+   },
+   {
+    "code": 11,
+    "label": "Diseases of the digestive system",
+    "n": 26,
+    "long_n": 14,
+    "long_rate": 0.5384615384615384,
+    "ci_low": 0.35457636204430115,
+    "ci_high": 0.712444173047651,
+    "mean_hours": 11.423076923076923,
+    "lost_hours": 297,
+    "event_share": 0.03730272596843615,
+    "hours_share": 0.057962529274004686,
+    "low_n": false,
+    "tier": "mixed / uncertain"
+   },
+   {
+    "code": 12,
+    "label": "Diseases of the skin and subcutaneous tissue",
+    "n": 8,
+    "long_n": 4,
+    "long_rate": 0.5,
+    "ci_low": 0.2152125268244419,
+    "ci_high": 0.7847874731755581,
+    "mean_hours": 23.375,
+    "lost_hours": 187,
+    "event_share": 0.011477761836441894,
+    "hours_share": 0.03649492583918813,
+    "low_n": true,
+    "tier": "insufficient data"
+   },
+   {
+    "code": 13,
+    "label": "Diseases of the musculoskeletal system and connective tissue",
+    "n": 55,
+    "long_n": 38,
+    "long_rate": 0.6909090909090909,
+    "ci_low": 0.5597116084861727,
+    "ci_high": 0.7971787547942275,
+    "mean_hours": 15.309090909090909,
+    "lost_hours": 842,
+    "event_share": 0.07890961262553801,
+    "hours_share": 0.1643247462919594,
+    "low_n": false,
+    "tier": "mostly long"
+   },
+   {
+    "code": 14,
+    "label": "Diseases of the genitourinary system",
+    "n": 19,
+    "long_n": 9,
+    "long_rate": 0.47368421052631576,
+    "ci_low": 0.2732950548744854,
+    "ci_high": 0.6829251748817489,
+    "mean_hours": 8.789473684210526,
+    "lost_hours": 167,
+    "event_share": 0.027259684361549498,
+    "hours_share": 0.032591725214676036,
+    "low_n": false,
+    "tier": "mixed / uncertain"
+   },
+   {
+    "code": 15,
+    "label": "Pregnancy, childbirth and the puerperium",
+    "n": 2,
+    "long_n": 2,
+    "long_rate": 1.0,
+    "ci_low": 0.3423719528896193,
+    "ci_high": 1.0,
+    "mean_hours": 8.0,
+    "lost_hours": 16,
+    "event_share": 0.0028694404591104736,
+    "hours_share": 0.00312256049960968,
+    "low_n": true,
+    "tier": "insufficient data"
+   },
+   {
+    "code": 16,
+    "label": "Conditions originating in the perinatal period",
+    "n": 3,
+    "long_n": 0,
+    "long_rate": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.5615060804490177,
+    "mean_hours": 2.0,
+    "lost_hours": 6,
+    "event_share": 0.00430416068866571,
+    "hours_share": 0.00117096018735363,
+    "low_n": true,
+    "tier": "insufficient data"
+   },
+   {
+    "code": 17,
+    "label": "Congenital malformations",
+    "n": 1,
+    "long_n": 1,
+    "long_rate": 1.0,
+    "ci_low": 0.20654329147389294,
+    "ci_high": 1.0,
+    "mean_hours": 8.0,
+    "lost_hours": 8,
+    "event_share": 0.0014347202295552368,
+    "hours_share": 0.00156128024980484,
+    "low_n": true,
+    "tier": "insufficient data"
+   },
+   {
+    "code": 18,
+    "label": "Symptoms and abnormal findings (not elsewhere classified)",
+    "n": 21,
+    "long_n": 17,
+    "long_rate": 0.8095238095238095,
+    "ci_low": 0.599990134607267,
+    "ci_high": 0.923325593848227,
+    "mean_hours": 10.333333333333334,
+    "lost_hours": 217,
+    "event_share": 0.03012912482065997,
+    "hours_share": 0.04234972677595628,
+    "low_n": false,
+    "tier": "mostly long"
+   },
+   {
+    "code": 19,
+    "label": "Injury, poisoning and other external-cause consequences",
+    "n": 40,
+    "long_n": 33,
+    "long_rate": 0.825,
+    "ci_low": 0.6804970794560756,
+    "ci_high": 0.9125469700311694,
+    "mean_hours": 18.225,
+    "lost_hours": 729,
+    "event_share": 0.05738880918220947,
+    "hours_share": 0.14227166276346603,
+    "low_n": false,
+    "tier": "mostly long"
+   },
+   {
+    "code": 21,
+    "label": "Factors influencing health status and health-service contact",
+    "n": 6,
+    "long_n": 4,
+    "long_rate": 0.6666666666666666,
+    "ci_low": 0.2999883213415286,
+    "ci_high": 0.903230667440783,
+    "mean_hours": 5.833333333333333,
+    "lost_hours": 35,
+    "event_share": 0.00860832137733142,
+    "hours_share": 0.006830601092896175,
+    "low_n": true,
+    "tier": "insufficient data"
+   },
+   {
+    "code": 22,
+    "label": "Patient follow-up",
+    "n": 38,
+    "long_n": 34,
+    "long_rate": 0.8947368421052632,
+    "ci_low": 0.7586916879980553,
+    "ci_high": 0.9582981020673341,
+    "mean_hours": 7.7105263157894735,
+    "lost_hours": 293,
+    "event_share": 0.054519368723098996,
+    "hours_share": 0.057181889149102265,
+    "low_n": false,
+    "tier": "mostly long"
+   },
+   {
+    "code": 23,
+    "label": "Medical consultation",
+    "n": 149,
+    "long_n": 13,
+    "long_rate": 0.087248322147651,
+    "ci_low": 0.051696171358888474,
+    "ci_high": 0.14354910217920588,
+    "mean_hours": 2.8456375838926173,
+    "lost_hours": 424,
+    "event_share": 0.21377331420373027,
+    "hours_share": 0.08274785323965651,
+    "low_n": false,
+    "tier": "mostly short"
+   },
+   {
+    "code": 24,
+    "label": "Blood donation",
+    "n": 3,
+    "long_n": 3,
+    "long_rate": 1.0,
+    "ci_low": 0.4384939195509822,
+    "ci_high": 1.0,
+    "mean_hours": 8.0,
+    "lost_hours": 24,
+    "event_share": 0.00430416068866571,
+    "hours_share": 0.00468384074941452,
+    "low_n": true,
+    "tier": "insufficient data"
+   },
+   {
+    "code": 25,
+    "label": "Laboratory examination",
+    "n": 31,
+    "long_n": 4,
+    "long_rate": 0.12903225806451613,
+    "ci_low": 0.05134201164644764,
+    "ci_high": 0.28852756954385356,
+    "mean_hours": 3.4838709677419355,
+    "lost_hours": 108,
+    "event_share": 0.04447632711621234,
+    "hours_share": 0.02107728337236534,
+    "low_n": false,
+    "tier": "mostly short"
+   },
+   {
+    "code": 26,
+    "label": "Unjustified absence",
+    "n": 33,
+    "long_n": 25,
+    "long_rate": 0.7575757575757576,
+    "ci_low": 0.5897505131450972,
+    "ci_high": 0.871684386533527,
+    "mean_hours": 7.2727272727272725,
+    "lost_hours": 240,
+    "event_share": 0.047345767575322814,
+    "hours_share": 0.0468384074941452,
+    "low_n": false,
+    "tier": "mostly long"
+   },
+   {
+    "code": 27,
+    "label": "Physiotherapy",
+    "n": 69,
+    "long_n": 0,
+    "long_rate": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.05273909414400562,
+    "mean_hours": 2.2753623188405796,
+    "lost_hours": 157,
+    "event_share": 0.09899569583931134,
+    "hours_share": 0.030640124902419984,
+    "low_n": false,
+    "tier": "mostly short"
+   },
+   {
+    "code": 28,
+    "label": "Dental consultation",
+    "n": 112,
+    "long_n": 8,
+    "long_rate": 0.07142857142857142,
+    "ci_low": 0.03663546303394121,
+    "ci_high": 0.1346467015770448,
+    "mean_hours": 2.9910714285714284,
+    "lost_hours": 335,
+    "event_share": 0.1606886657101865,
+    "hours_share": 0.06537861046057768,
+    "low_n": false,
+    "tier": "mostly short"
+   }
+  ],
+  "hours_by_reason": {
+   "1": {
+    "events": 16,
+    "histogram": {
+     "1": 1,
+     "5": 1,
+     "8": 12,
+     "16": 1,
+     "64": 1
+    }
+   },
+   "other": {
+    "events": 20,
+    "histogram": {
+     "1": 2,
+     "2": 1,
+     "3": 2,
+     "8": 11,
+     "16": 1,
+     "24": 1,
+     "32": 1,
+     "112": 1
+    }
+   },
+   "6": {
+    "events": 8,
+    "histogram": {
+     "3": 1,
+     "8": 6,
+     "120": 1
+    }
+   },
+   "7": {
+    "events": 15,
+    "histogram": {
+     "1": 1,
+     "2": 1,
+     "3": 2,
+     "4": 2,
+     "5": 1,
+     "8": 5,
+     "24": 2,
+     "40": 1
+    }
+   },
+   "8": {
+    "events": 6,
+    "histogram": {
+     "2": 1,
+     "3": 2,
+     "8": 3
+    }
+   },
+   "10": {
+    "events": 25,
+    "histogram": {
+     "2": 1,
+     "3": 2,
+     "4": 1,
+     "8": 17,
+     "24": 2,
+     "32": 1,
+     "48": 1
+    }
+   },
+   "11": {
+    "events": 26,
+    "histogram": {
+     "1": 5,
+     "2": 3,
+     "3": 2,
+     "4": 2,
+     "8": 10,
+     "16": 2,
+     "40": 1,
+     "120": 1
+    }
+   },
+   "12": {
+    "events": 8,
+    "histogram": {
+     "1": 1,
+     "3": 2,
+     "4": 1,
+     "16": 1,
+     "24": 2,
+     "112": 1
+    }
+   },
+   "13": {
+    "events": 55,
+    "histogram": {
+     "1": 6,
+     "2": 5,
+     "3": 6,
+     "8": 21,
+     "16": 4,
+     "24": 6,
+     "32": 1,
+     "40": 3,
+     "80": 2,
+     "120": 1
+    }
+   },
+   "14": {
+    "events": 19,
+    "histogram": {
+     "2": 2,
+     "3": 5,
+     "4": 3,
+     "8": 6,
+     "16": 1,
+     "32": 1,
+     "40": 1
+    }
+   },
+   "18": {
+    "events": 21,
+    "histogram": {
+     "1": 1,
+     "2": 1,
+     "3": 2,
+     "8": 16,
+     "80": 1
+    }
+   },
+   "19": {
+    "events": 40,
+    "histogram": {
+     "1": 1,
+     "2": 2,
+     "3": 4,
+     "8": 19,
+     "16": 4,
+     "24": 2,
+     "32": 2,
+     "40": 1,
+     "56": 2,
+     "64": 2,
+     "104": 1
+    }
+   },
+   "21": {
+    "events": 6,
+    "histogram": {
+     "1": 1,
+     "2": 1,
+     "8": 4
+    }
+   },
+   "22": {
+    "events": 38,
+    "histogram": {
+     "3": 3,
+     "4": 1,
+     "8": 33,
+     "16": 1
+    }
+   },
+   "23": {
+    "events": 149,
+    "histogram": {
+     "1": 38,
+     "2": 51,
+     "3": 27,
+     "4": 17,
+     "5": 3,
+     "8": 11,
+     "16": 2
+    }
+   },
+   "25": {
+    "events": 31,
+    "histogram": {
+     "1": 1,
+     "2": 12,
+     "3": 9,
+     "4": 3,
+     "5": 1,
+     "7": 1,
+     "8": 4
+    }
+   },
+   "26": {
+    "events": 33,
+    "histogram": {
+     "4": 8,
+     "8": 24,
+     "16": 1
+    }
+   },
+   "27": {
+    "events": 69,
+    "histogram": {
+     "0": 1,
+     "1": 2,
+     "2": 43,
+     "3": 23
+    }
+   },
+   "28": {
+    "events": 112,
+    "histogram": {
+     "1": 28,
+     "2": 33,
+     "3": 20,
+     "4": 22,
+     "5": 1,
+     "8": 6,
+     "16": 1,
+     "24": 1
+    }
+   }
+  },
+  "hours_by_reason_note": "Reasons with fewer than 5 records are pooled as 'other'."
+ },
+ "calendar": {
+  "by_month": [
+   {
+    "code": 1,
+    "label": "January",
+    "n": 50,
+    "long_n": 12,
+    "long_rate": 0.24,
+    "ci_low": 0.14297252401872207,
+    "ci_high": 0.37412949375192367,
+    "mean_hours": 4.44,
+    "lost_hours": 222
+   },
+   {
+    "code": 2,
+    "label": "February",
+    "n": 72,
+    "long_n": 18,
+    "long_rate": 0.25,
+    "ci_low": 0.1643892112532576,
+    "ci_high": 0.36093725865244064,
+    "mean_hours": 4.083333333333333,
+    "lost_hours": 294
+   },
+   {
+    "code": 3,
+    "label": "March",
+    "n": 83,
+    "long_n": 39,
+    "long_rate": 0.46987951807228917,
+    "ci_low": 0.36623168109196985,
+    "ci_high": 0.5761922263440978,
+    "mean_hours": 9.216867469879517,
+    "lost_hours": 765
+   },
+   {
+    "code": 4,
+    "label": "April",
+    "n": 52,
+    "long_n": 22,
+    "long_rate": 0.4230769230769231,
+    "ci_low": 0.2986784790886045,
+    "ci_high": 0.558059150205685,
+    "mean_hours": 9.26923076923077,
+    "lost_hours": 482
+   },
+   {
+    "code": 5,
+    "label": "May",
+    "n": 58,
+    "long_n": 24,
+    "long_rate": 0.41379310344827586,
+    "ci_low": 0.29627832678138283,
+    "ci_high": 0.5420182244074607,
+    "mean_hours": 6.896551724137931,
+    "lost_hours": 400
+   },
+   {
+    "code": 6,
+    "label": "June",
+    "n": 51,
+    "long_n": 22,
+    "long_rate": 0.43137254901960786,
+    "ci_low": 0.30501028092334304,
+    "ci_high": 0.5673493876494193,
+    "mean_hours": 8.058823529411764,
+    "lost_hours": 411
+   },
+   {
+    "code": 7,
+    "label": "July",
+    "n": 65,
+    "long_n": 38,
+    "long_rate": 0.5846153846153846,
+    "ci_low": 0.46338766020913363,
+    "ci_high": 0.6963994452619768,
+    "mean_hours": 11.292307692307693,
+    "lost_hours": 734
+   },
+   {
+    "code": 8,
+    "label": "August",
+    "n": 54,
+    "long_n": 19,
+    "long_rate": 0.35185185185185186,
+    "ci_low": 0.23822831722420018,
+    "ci_high": 0.48515416182202264,
+    "mean_hours": 5.333333333333333,
+    "lost_hours": 288
+   },
+   {
+    "code": 9,
+    "label": "September",
+    "n": 44,
+    "long_n": 14,
+    "long_rate": 0.3181818181818182,
+    "ci_low": 0.19999129931673565,
+    "ci_high": 0.46557172533126934,
+    "mean_hours": 6.636363636363637,
+    "lost_hours": 292
+   },
+   {
+    "code": 10,
+    "label": "October",
+    "n": 62,
+    "long_n": 21,
+    "long_rate": 0.3387096774193548,
+    "ci_low": 0.2334153463018197,
+    "ci_high": 0.4628253282868902,
+    "mean_hours": 5.629032258064516,
+    "lost_hours": 349
+   },
+   {
+    "code": 11,
+    "label": "November",
+    "n": 57,
+    "long_n": 25,
+    "long_rate": 0.43859649122807015,
+    "ci_low": 0.31772495285894004,
+    "ci_high": 0.567222188570608,
+    "mean_hours": 8.298245614035087,
+    "lost_hours": 473
+   },
+   {
+    "code": 12,
+    "label": "December",
+    "n": 49,
+    "long_n": 17,
+    "long_rate": 0.3469387755102041,
+    "ci_low": 0.22924209609314436,
+    "ci_high": 0.48689064780560204,
+    "mean_hours": 8.448979591836734,
+    "lost_hours": 414
+   }
+  ],
+  "by_weekday": [
+   {
+    "code": 2,
+    "label": "Monday",
+    "n": 155,
+    "long_n": 75,
+    "long_rate": 0.4838709677419355,
+    "ci_low": 0.4065427410520664,
+    "ci_high": 0.5619793589519627,
+    "mean_hours": 9.606451612903227,
+    "lost_hours": 1489
+   },
+   {
+    "code": 3,
+    "label": "Tuesday",
+    "n": 141,
+    "long_n": 58,
+    "long_rate": 0.41134751773049644,
+    "ci_low": 0.33352544599349077,
+    "ci_high": 0.4938722077192547,
+    "mean_hours": 8.71631205673759,
+    "lost_hours": 1229
+   },
+   {
+    "code": 4,
+    "label": "Wednesday",
+    "n": 145,
+    "long_n": 60,
+    "long_rate": 0.41379310344827586,
+    "ci_low": 0.336862322438135,
+    "ci_high": 0.4951738824938194,
+    "mean_hours": 7.689655172413793,
+    "lost_hours": 1115
+   },
+   {
+    "code": 5,
+    "label": "Thursday",
+    "n": 118,
+    "long_n": 36,
+    "long_rate": 0.3050847457627119,
+    "ci_low": 0.22924088369362036,
+    "ci_high": 0.39321975372414164,
+    "mean_hours": 4.686440677966102,
+    "lost_hours": 553
+   },
+   {
+    "code": 6,
+    "label": "Friday",
+    "n": 138,
+    "long_n": 42,
+    "long_rate": 0.30434782608695654,
+    "ci_low": 0.23373730953412233,
+    "ci_high": 0.38555632505544807,
+    "mean_hours": 5.3478260869565215,
+    "lost_hours": 738
+   }
+  ],
+  "note": "Each bar rests on roughly 50-90 events; differences between months or weekdays are mostly within noise."
+ },
+ "timeline": {
+  "periods": [
+   {
+    "period": 1,
+    "label": "2007-07",
+    "n": 18,
+    "long_n": 9,
+    "long_rate": 0.5,
+    "ci_low": 0.2903070395897999,
+    "ci_high": 0.7096929604102001,
+    "mean_hours": 7.166666666666667,
+    "lost_hours": 129
+   },
+   {
+    "period": 2,
+    "label": "2007-08",
+    "n": 21,
+    "long_n": 9,
+    "long_rate": 0.42857142857142855,
+    "ci_low": 0.24469699486521046,
+    "ci_high": 0.6345378370296754,
+    "mean_hours": 6.666666666666667,
+    "lost_hours": 140
+   },
+   {
+    "period": 3,
+    "label": "2007-09",
+    "n": 17,
+    "long_n": 3,
+    "long_rate": 0.17647058823529413,
+    "ci_low": 0.06191013712548989,
+    "ci_high": 0.41029929017375777,
+    "mean_hours": 5.176470588235294,
+    "lost_hours": 88
+   },
+   {
+    "period": 4,
+    "label": "2007-10",
+    "n": 17,
+    "long_n": 4,
+    "long_rate": 0.23529411764705882,
+    "ci_low": 0.09554889071675943,
+    "ci_high": 0.47262245889171606,
+    "mean_hours": 4.352941176470588,
+    "lost_hours": 74
+   },
+   {
+    "period": 5,
+    "label": "2007-11",
+    "n": 18,
+    "long_n": 8,
+    "long_rate": 0.4444444444444444,
+    "ci_low": 0.24559231101389123,
+    "ci_high": 0.6628393057174836,
+    "mean_hours": 8.944444444444445,
+    "lost_hours": 161
+   },
+   {
+    "period": 6,
+    "label": "2007-12",
+    "n": 15,
+    "long_n": 7,
+    "long_rate": 0.4666666666666667,
+    "ci_low": 0.24809225259746442,
+    "ci_high": 0.6988336984894922,
+    "mean_hours": 11.8,
+    "lost_hours": 177
+   },
+   {
+    "period": 7,
+    "label": "2008-01",
+    "n": 24,
+    "long_n": 3,
+    "long_rate": 0.125,
+    "ci_low": 0.043442550393155845,
+    "ci_high": 0.3100428814785757,
+    "mean_hours": 2.5,
+    "lost_hours": 60
+   },
+   {
+    "period": 8,
+    "label": "2008-02",
+    "n": 18,
+    "long_n": 9,
+    "long_rate": 0.5,
+    "ci_low": 0.2903070395897999,
+    "ci_high": 0.7096929604102001,
+    "mean_hours": 4.833333333333333,
+    "lost_hours": 87
+   },
+   {
+    "period": 9,
+    "label": "2008-03",
+    "n": 29,
+    "long_n": 18,
+    "long_rate": 0.6206896551724138,
+    "ci_low": 0.4400222620928496,
+    "ci_high": 0.7731220426913266,
+    "mean_hours": 9.689655172413794,
+    "lost_hours": 281
+   },
+   {
+    "period": 10,
+    "label": "2008-04",
+    "n": 19,
+    "long_n": 9,
+    "long_rate": 0.47368421052631576,
+    "ci_low": 0.2732950548744854,
+    "ci_high": 0.6829251748817489,
+    "mean_hours": 10.210526315789474,
+    "lost_hours": 194
+   },
+   {
+    "period": 11,
+    "label": "2008-05",
+    "n": 12,
+    "long_n": 6,
+    "long_rate": 0.5,
+    "ci_low": 0.2537781703934222,
+    "ci_high": 0.7462218296065778,
+    "mean_hours": 7.583333333333333,
+    "lost_hours": 91
+   },
+   {
+    "period": 12,
+    "label": "2008-06",
+    "n": 16,
+    "long_n": 10,
+    "long_rate": 0.625,
+    "ci_low": 0.38640647097934805,
+    "ci_high": 0.8151901744524719,
+    "mean_hours": 11.9375,
+    "lost_hours": 191
+   },
+   {
+    "period": 13,
+    "label": "2008-07",
+    "n": 15,
+    "long_n": 12,
+    "long_rate": 0.8,
+    "ci_low": 0.5481406466534955,
+    "ci_high": 0.9295257935638959,
+    "mean_hours": 9.133333333333333,
+    "lost_hours": 137
+   },
+   {
+    "period": 14,
+    "label": "2008-08",
+    "n": 18,
+    "long_n": 6,
+    "long_rate": 0.3333333333333333,
+    "ci_low": 0.16278554363662856,
+    "ci_high": 0.5625093065574964,
+    "mean_hours": 4.0,
+    "lost_hours": 72
+   },
+   {
+    "period": 15,
+    "label": "2008-09",
+    "n": 15,
+    "long_n": 8,
+    "long_rate": 0.5333333333333333,
+    "ci_low": 0.3011663015105079,
+    "ci_high": 0.7519077474025356,
+    "mean_hours": 10.866666666666667,
+    "lost_hours": 163
+   },
+   {
+    "period": 16,
+    "label": "2008-10",
+    "n": 21,
+    "long_n": 9,
+    "long_rate": 0.42857142857142855,
+    "ci_low": 0.24469699486521046,
+    "ci_high": 0.6345378370296754,
+    "mean_hours": 8.380952380952381,
+    "lost_hours": 176
+   },
+   {
+    "period": 17,
+    "label": "2008-11",
+    "n": 19,
+    "long_n": 9,
+    "long_rate": 0.47368421052631576,
+    "ci_low": 0.2732950548744854,
+    "ci_high": 0.6829251748817489,
+    "mean_hours": 10.789473684210526,
+    "lost_hours": 205
+   },
+   {
+    "period": 18,
+    "label": "2008-12",
+    "n": 19,
+    "long_n": 5,
+    "long_rate": 0.2631578947368421,
+    "ci_low": 0.11806238339540162,
+    "ci_high": 0.48791968441070643,
+    "mean_hours": 3.6315789473684212,
+    "lost_hours": 69
+   },
+   {
+    "period": 19,
+    "label": "2009-01",
+    "n": 11,
+    "long_n": 4,
+    "long_rate": 0.36363636363636365,
+    "ci_low": 0.15166223614131386,
+    "ci_high": 0.6462032231083628,
+    "mean_hours": 6.7272727272727275,
+    "lost_hours": 74
+   },
+   {
+    "period": 20,
+    "label": "2009-02",
+    "n": 21,
+    "long_n": 5,
+    "long_rate": 0.23809523809523808,
+    "ci_low": 0.10627856389112264,
+    "ci_high": 0.4509158197234593,
+    "mean_hours": 5.0476190476190474,
+    "lost_hours": 106
+   },
+   {
+    "period": 21,
+    "label": "2009-03",
+    "n": 18,
+    "long_n": 12,
+    "long_rate": 0.6666666666666666,
+    "ci_low": 0.4374906934425036,
+    "ci_high": 0.8372144563633714,
+    "mean_hours": 7.055555555555555,
+    "lost_hours": 127
+   },
+   {
+    "period": 22,
+    "label": "2009-04",
+    "n": 13,
+    "long_n": 4,
+    "long_rate": 0.3076923076923077,
+    "ci_low": 0.1268049716161809,
+    "ci_high": 0.5763111218666236,
+    "mean_hours": 13.384615384615385,
+    "lost_hours": 174
+   },
+   {
+    "period": 23,
+    "label": "2009-05",
+    "n": 16,
+    "long_n": 5,
+    "long_rate": 0.3125,
+    "ci_low": 0.14164435051961052,
+    "ci_high": 0.5559606813326594,
+    "mean_hours": 4.6875,
+    "lost_hours": 75
+   },
+   {
+    "period": 24,
+    "label": "2009-06",
+    "n": 18,
+    "long_n": 5,
+    "long_rate": 0.2777777777777778,
+    "ci_low": 0.12499569146355476,
+    "ci_high": 0.5087307754619452,
+    "mean_hours": 6.777777777777778,
+    "lost_hours": 122
+   },
+   {
+    "period": 25,
+    "label": "2009-07",
+    "n": 20,
+    "long_n": 10,
+    "long_rate": 0.5,
+    "ci_low": 0.2992949144298199,
+    "ci_high": 0.70070508557018,
+    "mean_hours": 10.2,
+    "lost_hours": 204
+   },
+   {
+    "period": 26,
+    "label": "2009-08",
+    "n": 15,
+    "long_n": 4,
+    "long_rate": 0.26666666666666666,
+    "ci_low": 0.10897276103182811,
+    "ci_high": 0.5195088965768675,
+    "mean_hours": 5.066666666666666,
+    "lost_hours": 76
+   },
+   {
+    "period": 27,
+    "label": "2009-09",
+    "n": 12,
+    "long_n": 3,
+    "long_rate": 0.25,
+    "ci_low": 0.08894003962896137,
+    "ci_high": 0.53231033912066,
+    "mean_hours": 3.4166666666666665,
+    "lost_hours": 41
+   },
+   {
+    "period": 28,
+    "label": "2009-10",
+    "n": 24,
+    "long_n": 8,
+    "long_rate": 0.3333333333333333,
+    "ci_low": 0.17971978688379645,
+    "ci_high": 0.5329404050591954,
+    "mean_hours": 4.125,
+    "lost_hours": 99
+   },
+   {
+    "period": 29,
+    "label": "2009-11",
+    "n": 20,
+    "long_n": 8,
+    "long_rate": 0.4,
+    "ci_low": 0.21880396741419272,
+    "ci_high": 0.613422057684794,
+    "mean_hours": 5.35,
+    "lost_hours": 107
+   },
+   {
+    "period": 30,
+    "label": "2009-12",
+    "n": 15,
+    "long_n": 5,
+    "long_rate": 0.3333333333333333,
+    "ci_low": 0.15176100694691236,
+    "ci_high": 0.5828687484878702,
+    "mean_hours": 11.2,
+    "lost_hours": 168
+   },
+   {
+    "period": 31,
+    "label": "2010-01",
+    "n": 15,
+    "long_n": 5,
+    "long_rate": 0.3333333333333333,
+    "ci_low": 0.15176100694691236,
+    "ci_high": 0.5828687484878702,
+    "mean_hours": 5.866666666666666,
+    "lost_hours": 88
+   },
+   {
+    "period": 32,
+    "label": "2010-02",
+    "n": 33,
+    "long_n": 4,
+    "long_rate": 0.12121212121212122,
+    "ci_low": 0.0481608326758423,
+    "ci_high": 0.2732584325026516,
+    "mean_hours": 3.0606060606060606,
+    "lost_hours": 101
+   },
+   {
+    "period": 33,
+    "label": "2010-03",
+    "n": 36,
+    "long_n": 9,
+    "long_rate": 0.25,
+    "ci_low": 0.13750323839225387,
+    "ci_high": 0.41070767683203424,
+    "mean_hours": 9.916666666666666,
+    "lost_hours": 357
+   },
+   {
+    "period": 34,
+    "label": "2010-04",
+    "n": 20,
+    "long_n": 9,
+    "long_rate": 0.45,
+    "ci_low": 0.25819502085709295,
+    "ci_high": 0.6579179916924003,
+    "mean_hours": 5.7,
+    "lost_hours": 114
+   },
+   {
+    "period": 35,
+    "label": "2010-05",
+    "n": 30,
+    "long_n": 13,
+    "long_rate": 0.43333333333333335,
+    "ci_low": 0.27377237430615114,
+    "ci_high": 0.6080299045459127,
+    "mean_hours": 7.8,
+    "lost_hours": 234
+   },
+   {
+    "period": 36,
+    "label": "2010-06",
+    "n": 17,
+    "long_n": 7,
+    "long_rate": 0.4117647058823529,
+    "ci_low": 0.21610786039131383,
+    "ci_high": 0.6399492561448445,
+    "mean_hours": 5.764705882352941,
+    "lost_hours": 98
+   },
+   {
+    "period": 37,
+    "label": "2010-07",
+    "n": 12,
+    "long_n": 7,
+    "long_rate": 0.5833333333333334,
+    "ci_low": 0.3195073356553728,
+    "ci_high": 0.8067425380947534,
+    "mean_hours": 22.0,
+    "lost_hours": 264
+   }
+  ],
+  "segments": {
+   "first_third": {
+    "months": 12,
+    "events": 224,
+    "long_rate": 0.42410714285714285,
+    "events_per_month": 18.666666666666668
+   },
+   "middle_third": {
+    "months": 12,
+    "events": 204,
+    "long_rate": 0.4117647058823529,
+    "events_per_month": 17.0
+   },
+   "last_third": {
+    "months": 13,
+    "events": 269,
+    "long_rate": 0.3420074349442379,
+    "events_per_month": 20.692307692307693
+   }
+  },
+  "consistency": {
+   "runs_total": 38,
+   "runs_with_month": 37,
+   "consecutive_month_steps": 36,
+   "steps_checked": 36,
+   "one_month_per_run": true,
+   "distinct_workload_values": 38,
+   "rows_without_period": 3,
+   "ok": true,
+   "assumed_start": "2007-07",
+   "note": "Reconstructed from row order and the monthly workload figure; the file has no date column. The start month is taken from the public dataset documentation."
+  },
+  "events_per_month": {
+   "mean": 18.83783783783784,
+   "min": 11,
+   "max": 36,
+   "months": 37
+  },
+  "caveat": "Monthly counts are recorded absence EVENTS, not an absence rate: the file has no headcount per month and no record of days without absence."
+ },
+ "employees": {
+  "employees": 33,
+  "records_per_employee_sorted": [
+   112,
+   75,
+   55,
+   46,
+   39,
+   38,
+   35,
+   29,
+   29,
+   28,
+   24,
+   23,
+   22,
+   20,
+   14,
+   14,
+   13,
+   10,
+   8,
+   8,
+   7,
+   7,
+   6,
+   5,
+   5,
+   5,
+   4,
+   4,
+   4,
+   2,
+   2,
+   2,
+   2
+  ],
+  "top_3_share": 0.3472022955523673,
+  "top_10pct_employees": 4,
+  "top_10pct_share": 0.4131994261119082,
+  "gini": 0.5340637363592887,
+  "median_records": 13.0,
+  "long_share_distribution": [
+   {
+    "bin": "0-20%",
+    "employees": 3
+   },
+   {
+    "bin": "20-40%",
+    "employees": 8
+   },
+   {
+    "bin": "40-60%",
+    "employees": 5
+   },
+   {
+    "bin": "60-80%",
+    "employees": 6
+   },
+   {
+    "bin": "80-100%",
+    "employees": 4
+   }
+  ],
+  "long_share_distribution_note": "Employees with at least 5 records only.",
+  "ethics_note": "Aggregates only. The app never ranks, scores or identifies individual employees."
+ },
+ "association": {
+  "Reason for absence": {
+   "chi2": 345.4946737818975,
+   "p_value": 3.6239348720575237e-65,
+   "dof": 14,
+   "cramers_v": 0.7040512748930121,
+   "share_cells_expected_lt5": 0.0
+  },
+  "Month of absence": {
+   "chi2": 26.922728171228506,
+   "p_value": 0.004720332442302278,
+   "dof": 11,
+   "cramers_v": 0.1965364666978579,
+   "share_cells_expected_lt5": 0.0
+  },
+  "Day of the week": {
+   "chi2": 14.19998414090828,
+   "p_value": 0.006683396331834093,
+   "dof": 4,
+   "cramers_v": 0.14273403415557429,
+   "share_cells_expected_lt5": 0.0
+  },
+  "note": "Chi-square tests treat the 697 events as independent, but events from the same employee are correlated, so p-values are optimistic. Cramer's V (0 to 1) is the more useful effect size."
+ },
+ "labels": {
+  "reason": {
+   "1": "Infectious and parasitic diseases",
+   "2": "Neoplasms",
+   "3": "Diseases of the blood and immune mechanism",
+   "4": "Endocrine, nutritional and metabolic diseases",
+   "5": "Mental and behavioural disorders",
+   "6": "Diseases of the nervous system",
+   "7": "Diseases of the eye and adnexa",
+   "8": "Diseases of the ear and mastoid process",
+   "9": "Diseases of the circulatory system",
+   "10": "Diseases of the respiratory system",
+   "11": "Diseases of the digestive system",
+   "12": "Diseases of the skin and subcutaneous tissue",
+   "13": "Diseases of the musculoskeletal system and connective tissue",
+   "14": "Diseases of the genitourinary system",
+   "15": "Pregnancy, childbirth and the puerperium",
+   "16": "Conditions originating in the perinatal period",
+   "17": "Congenital malformations",
+   "18": "Symptoms and abnormal findings (not elsewhere classified)",
+   "19": "Injury, poisoning and other external-cause consequences",
+   "20": "External causes of morbidity and mortality",
+   "21": "Factors influencing health status and health-service contact",
+   "22": "Patient follow-up",
+   "23": "Medical consultation",
+   "24": "Blood donation",
+   "25": "Laboratory examination",
+   "26": "Unjustified absence",
+   "27": "Physiotherapy",
+   "28": "Dental consultation"
+  },
+  "month": {
+   "1": "January",
+   "2": "February",
+   "3": "March",
+   "4": "April",
+   "5": "May",
+   "6": "June",
+   "7": "July",
+   "8": "August",
+   "9": "September",
+   "10": "October",
+   "11": "November",
+   "12": "December"
+  },
+  "weekday": {
+   "2": "Monday",
+   "3": "Tuesday",
+   "4": "Wednesday",
+   "5": "Thursday",
+   "6": "Friday"
+  }
+ }
+}

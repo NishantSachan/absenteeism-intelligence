@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+# Raw employee data contains health-related and personal attributes: never commit it.
+data/raw/*.csv
+.env
+*.pem
+*.key
+
+# Frontend / build output
+frontend/node_modules/
+frontend/dist/
+release/
+*.tar.gz
